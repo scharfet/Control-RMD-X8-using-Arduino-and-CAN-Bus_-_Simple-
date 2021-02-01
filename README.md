@@ -4,7 +4,7 @@
 Simple Function:
 
 When Arduino and motor is turned on:
-   - The RMD-X8 should starts automatically with Speed closed-loop command (0xA2).
+   - The RMD-X8 should start automatically with Speed closed-loop command (0xA2).
 
 
 

@@ -31,7 +31,7 @@ void loop()
 /* Speed value in Hex, possible? ===================== */
 
 {
-  byte data[8] = {0xA2, 0x00, 0x00, 0x00, 0xA0, 0x86, 0x01, 0x00};
+  byte data[8] = {0x92, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
     // send data:  ID = 0x100, Standard CAN Frame, Data length = 8 bytes, 'data' = array of data bytes to send
     byte sndStat = CAN0.sendMsgBuf(0x141, 0, 8, data);
   }
@@ -41,7 +41,7 @@ void loop()
 /* VERSION 2 ================================ */
 /*  Speed value in decimal 
 
-  byte data[8] = {0xA2, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+  byte data[8] = {0x92, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 for (long speed = 0; speed < 100000; speed += 100) {
     data[4] = speed & 0xFF;
     data[5] = (speed >> 8) & 0xFF;
